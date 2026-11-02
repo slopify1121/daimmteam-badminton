@@ -39,7 +39,7 @@ export default function RegistrationForm({ selectedProgram }) {
   const generateWhatsAppMessage = () => {
     const admin = getActiveAdmin();
     return `*PENDAFTARAN DAIMMTEAM BADMINTON CLUB*
-Kepada: Kak ${admin.name}
+Kepada: ${admin.name} (Official Admin)
 ----------------------------------------
 *Nama Calon Peserta:* ${formData.fullName || '-'}
 *Usia:* ${formData.age ? formData.age + ' Tahun' : '-'}
@@ -50,7 +50,7 @@ Kepada: Kak ${admin.name}
 *Biaya Pendaftaran:* ${siteConfig.registrationFee.amount} (${siteConfig.registrationFee.benefit})
 *Catatan / Pertanyaan:* ${formData.notes || 'Tidak ada'}
 ----------------------------------------
-_Halo Kak ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmteam Badminton Club. Mohon info ketersediaan slot latihan dan info pembayaran pendaftaran._`;
+_Halo ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmteam Badminton Club. Mohon info ketersediaan slot latihan dan info pembayaran pendaftaran._`;
   };
 
   const handleSubmit = (e) => {
@@ -97,22 +97,23 @@ _Halo Kak ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmtea
           </p>
         </div>
 
-        {/* Kaos / Jersey & Pendaftaran Showcase Card (Pindahan dari Hero - Opsi A) */}
-        <div className="mt-8 max-w-2xl mx-auto p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-500/20 via-brand-gold/15 to-yellow-500/20 border-2 border-brand-gold/70 shadow-xl backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        {/* Kaos / Jersey & Pendaftaran Showcase Card (Bentuk Ticket/Badge 1 Baris) */}
+        <div className="mt-8 max-w-2xl mx-auto p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-500/15 via-brand-surface to-brand-royal/30 border border-brand-gold/60 shadow-xl flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <div className="flex items-center gap-3.5">
-            <div className="w-12 h-12 rounded-xl bg-brand-gold text-brand-dark flex items-center justify-center shrink-0 shadow-md">
+            <div className="w-12 h-12 rounded-2xl bg-brand-gold text-brand-dark flex items-center justify-center shrink-0 shadow-lg">
               <Shirt className="w-6 h-6" />
             </div>
             <div>
-              <div className="text-base sm:text-lg font-black text-white">
-                PENDAFTARAN <span className="text-brand-gold">{siteConfig.registrationFee.amount}</span>
+              <div className="text-base sm:text-xl font-black text-white whitespace-nowrap flex items-center justify-center md:justify-start gap-2">
+                <span>PENDAFTARAN</span>
+                <span className="text-brand-gold">{siteConfig.registrationFee.amount}</span>
               </div>
-              <div className="text-xs font-bold text-amber-300 uppercase tracking-wide">
+              <div className="text-[11px] sm:text-xs font-bold text-amber-300 uppercase tracking-wider mt-0.5 whitespace-nowrap">
                 ★ {siteConfig.registrationFee.benefit.toUpperCase()} ★
               </div>
             </div>
           </div>
-          <div className="text-[11px] sm:text-xs text-slate-300 font-medium sm:text-right border-t sm:border-t-0 sm:border-l border-slate-700/60 pt-2 sm:pt-0 sm:pl-4">
+          <div className="text-[11px] sm:text-xs text-slate-300 font-medium md:text-right border-t md:border-t-0 md:border-l border-slate-700/60 pt-3 md:pt-0 md:pl-5">
             Pilih ukuran jersey pada form di bawah untuk persiapan latihan.
           </div>
         </div>
@@ -152,10 +153,10 @@ _Halo Kak ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmtea
                 </div>
               )}
 
-              {/* Grid 1: Pilih Admin Tujuan */}
+              {/* Grid 1: Pilih Admin Tujuan (Format Resmi: Admin 1 & Admin 2) */}
               <div>
                 <label className="block text-xs font-bold text-slate-200 mb-2">
-                  Pilih Admin WhatsApp Tujuan:
+                  Pilih WhatsApp Admin Tujuan:
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <label
@@ -174,7 +175,7 @@ _Halo Kak ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmtea
                       className="text-brand-gold focus:ring-brand-gold"
                     />
                     <div>
-                      <span className="block text-sm font-bold">Kak Hervan</span>
+                      <span className="block text-sm font-bold text-white">Admin 1 (WhatsApp)</span>
                       <span className="block text-[11px] text-slate-400">{siteConfig.contact.primaryAdmin.whatsappFormatted}</span>
                     </div>
                   </label>
@@ -195,7 +196,7 @@ _Halo Kak ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmtea
                       className="text-brand-gold focus:ring-brand-gold"
                     />
                     <div>
-                      <span className="block text-sm font-bold">Kak Seva</span>
+                      <span className="block text-sm font-bold text-white">Admin 2 (WhatsApp)</span>
                       <span className="block text-[11px] text-slate-400">{siteConfig.contact.secondaryAdmin.whatsappFormatted}</span>
                     </div>
                   </label>

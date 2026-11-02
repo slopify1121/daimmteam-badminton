@@ -152,17 +152,17 @@ export default function LocationMap() {
               </div>
             </div>
 
-            {/* Contact Person (Hervan & Seva) */}
+            {/* Contact Person (Admin 1 & Admin 2) */}
             <div className="rounded-2xl bg-gradient-to-br from-brand-royal/30 via-brand-dark to-brand-surface border border-brand-royal/50 p-6 shadow-lg">
-              <h3 className="text-base font-bold text-white mb-2">Kontak Person Resmi (Admin)</h3>
+              <h3 className="text-base font-bold text-white mb-2">WhatsApp Admin Resmi</h3>
               <p className="text-xs text-slate-300 mb-4">
-                Silakan hubungi kontak person berikut untuk tanya jadwal latihan perdana atau pendaftaran:
+                Silakan hubungi WhatsApp admin berikut untuk tanya jadwal latihan perdana atau info pendaftaran:
               </p>
 
               <div className="space-y-3">
-                {/* Hervan */}
+                {/* Admin 1 */}
                 <a
-                  href={`https://wa.me/${siteConfig.contact.primaryAdmin.whatsapp}?text=${encodeURIComponent(`Halo Kak Hervan, saya ingin bertanya info pendaftaran latihan di ${activeVenue.name}.`)}`}
+                  href={`https://wa.me/${siteConfig.contact.primaryAdmin.whatsapp}?text=${encodeURIComponent(`Halo Admin 1, saya ingin bertanya info pendaftaran latihan di ${activeVenue.name}.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-3 rounded-xl bg-brand-surface/90 hover:bg-brand-royal/50 text-slate-200 hover:text-white border border-slate-700/60 transition-all group"
@@ -172,7 +172,7 @@ export default function LocationMap() {
                       <Phone className="w-4 h-4" />
                     </div>
                     <div>
-                      <span className="block text-xs font-bold text-white">Hervan (Admin 1)</span>
+                      <span className="block text-xs font-bold text-white">Admin 1 (WhatsApp)</span>
                       <span className="block text-[11px] text-slate-400">{siteConfig.contact.primaryAdmin.whatsappFormatted}</span>
                     </div>
                   </div>
@@ -181,9 +181,9 @@ export default function LocationMap() {
                   </span>
                 </a>
 
-                {/* Seva */}
+                {/* Admin 2 */}
                 <a
-                  href={`https://wa.me/${siteConfig.contact.secondaryAdmin.whatsapp}?text=${encodeURIComponent(`Halo Kak Seva, saya ingin bertanya info pendaftaran latihan di ${activeVenue.name}.`)}`}
+                  href={`https://wa.me/${siteConfig.contact.secondaryAdmin.whatsapp}?text=${encodeURIComponent(`Halo Admin 2, saya ingin bertanya info pendaftaran latihan di ${activeVenue.name}.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-3 rounded-xl bg-brand-surface/90 hover:bg-brand-royal/50 text-slate-200 hover:text-white border border-slate-700/60 transition-all group"
@@ -193,7 +193,7 @@ export default function LocationMap() {
                       <Phone className="w-4 h-4" />
                     </div>
                     <div>
-                      <span className="block text-xs font-bold text-white">Seva (Admin 2)</span>
+                      <span className="block text-xs font-bold text-white">Admin 2 (WhatsApp)</span>
                       <span className="block text-[11px] text-slate-400">{siteConfig.contact.secondaryAdmin.whatsappFormatted}</span>
                     </div>
                   </div>

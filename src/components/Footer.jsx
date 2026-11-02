@@ -50,7 +50,7 @@ export default function Footer() {
                 aria-label="WhatsApp Admin Daimmteam"
               >
                 <Phone className="w-4 h-4 text-emerald-400" />
-                <span>WA Kak Hervan</span>
+                <span>WhatsApp Admin</span>
               </a>
             </div>
           </div>
@@ -64,6 +64,7 @@ export default function Footer() {
               <li><a href="#lokasi" className="hover:text-brand-gold transition-colors">Jadwal & Lokasi GOR</a></li>
               <li><a href="#fasilitas" className="hover:text-brand-gold transition-colors">Fasilitas Latihan</a></li>
               <li><a href="#pelatih" className="hover:text-brand-gold transition-colors">Tim Kepelatihan</a></li>
+              <li><a href="#galeri" className="hover:text-brand-gold transition-colors">Galeri Latihan</a></li>
               <li><a href="#daftar" className="hover:text-brand-gold transition-colors">Pendaftaran 150rb + Jersey</a></li>
             </ul>
           </div>
@@ -89,11 +90,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Hervan: {siteConfig.contact.primaryAdmin.whatsappFormatted}</span>
+                <span>Admin 1: {siteConfig.contact.primaryAdmin.whatsappFormatted}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Seva: {siteConfig.contact.secondaryAdmin.whatsappFormatted}</span>
+                <span>Admin 2: {siteConfig.contact.secondaryAdmin.whatsappFormatted}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Instagram className="w-4 h-4 text-pink-400 shrink-0" />

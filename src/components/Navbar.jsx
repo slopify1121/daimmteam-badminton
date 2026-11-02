@@ -21,9 +21,10 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Keunggulan', href: '#keunggulan' },
     { name: 'Program Kelas', href: '#program' },
-    { name: 'Jadwal & GOR', href: '#lokasi' },
+    { name: 'Jadwal & Lokasi', href: '#lokasi' },
     { name: 'Fasilitas', href: '#fasilitas' },
     { name: 'Tim Pelatih', href: '#pelatih' },
+    { name: 'Galeri', href: '#galeri' },
     { name: 'FAQ', href: '#faq' },
   ];
 
@@ -38,7 +39,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Logo PNG & Brand Name */}
+          {/* Logo PNG & Brand Name (Tanpa Teks GOR di bawahnya) */}
           <a href="#" className="flex items-center gap-3 group">
             <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
               <img
@@ -50,9 +51,6 @@ export default function Navbar() {
             <div>
               <span className="block text-lg sm:text-xl font-extrabold tracking-tight text-white group-hover:text-brand-gold transition-colors">
                 {siteConfig.brandName}
-              </span>
-              <span className="block text-[10px] sm:text-xs font-semibold tracking-wider text-amber-400 uppercase">
-                GOR Sariwates & GOR BMW
               </span>
             </div>
           </a>

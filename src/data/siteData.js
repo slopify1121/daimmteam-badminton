@@ -8,15 +8,15 @@ export const siteConfig = {
   tagline: "Pusat Pembinaan & Pelatihan Bulutangkis Berprestasi",
   subTagline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   
-  // Kontak Resmi (Sesuai Spanduk)
+  // Kontak Resmi Admin (Tanpa Nama Pribadi agar Lebih Profesional)
   contact: {
     primaryAdmin: {
-      name: "Hervan",
+      name: "Admin 1",
       whatsapp: "6285722370950",
       whatsappFormatted: "0857-2237-0950"
     },
     secondaryAdmin: {
-      name: "Seva",
+      name: "Admin 2",
       whatsapp: "6289662235994",
       whatsappFormatted: "0896-6223-5994"
     },
@@ -178,6 +178,34 @@ export const siteConfig = {
     }
   ],
 
+  // Galeri Kegiatan & Dokumentasi Latihan
+  gallery: [
+    {
+      id: "gal-1",
+      title: "Sesi Latihan Footwork & Kelincahan",
+      category: "Latihan Rutin",
+      image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      id: "gal-2",
+      title: "Bimbingan Teknik Dasar Anak",
+      category: "Pra Usia Dini",
+      image: "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      id: "gal-3",
+      title: "Suasana Lapangan & Latihan Terarah",
+      category: "GOR Resmi",
+      image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      id: "gal-4",
+      title: "Drill Pukulan & Taktik Remaja",
+      category: "Pemula - Remaja",
+      image: "https://images.unsplash.com/photo-1613918431703-aa503e47a956?q=80&w=800&auto=format&fit=crop"
+    }
+  ],
+
   // FAQ Berdasarkan Fakta Pasti
   faqs: [
     {
@@ -194,11 +222,11 @@ export const siteConfig = {
     },
     {
       question: "Bagaimana cara mendaftar dan menanyakan iuran bulanan?",
-      answer: "Anda cukup mengisi formulir online di website ini, lalu klik tombol kirim. Pesan pendaftaran akan langsung terhubung ke WhatsApp Admin (Kak Hervan atau Kak Seva) untuk konfirmasi jadwal latihan dan informasi iuran bulanan."
+      answer: "Anda cukup mengisi formulir online di website ini, lalu klik tombol kirim. Pesan pendaftaran akan langsung terhubung ke WhatsApp Admin resmi untuk konfirmasi jadwal latihan dan informasi iuran bulanan."
     },
     {
       question: "Siapa nomor kontak admin yang dapat dihubungi?",
-      answer: "Anda dapat menghubungi Kak Hervan di 0857-2237-0950 atau Kak Seva di 0896-6223-5994, serta mengikuti akun Instagram resmi di @Daimmteam."
+      answer: "Anda dapat menghubungi WhatsApp Admin 1 di 0857-2237-0950 atau Admin 2 di 0896-6223-5994, serta mengikuti akun Instagram resmi di @Daimmteam."
     }
   ]
 };
