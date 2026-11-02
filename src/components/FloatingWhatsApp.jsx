@@ -25,7 +25,7 @@ export default function FloatingWhatsApp() {
 
       {/* Floating Button */}
       <a
-        href={`https://wa.me/${siteConfig.contact.primaryAdmin.whatsapp}?text=${encodeURIComponent('Halo Kak Hervan, saya ingin bertanya info pendaftaran Daimmteam Badminton Club.')}`}
+        href={`https://wa.me/${siteConfig.contact.primaryAdmin.whatsapp}?text=${encodeURIComponent('Halo Admin Daimmteam Badminton Club, saya ingin bertanya info jadwal dan pendaftaran.')}`}
         target="_blank"
         rel="noopener noreferrer"
         className="relative group w-14 h-14 rounded-full bg-gradient-to-tr from-emerald-600 to-green-500 hover:from-emerald-500 hover:to-green-400 text-white flex items-center justify-center shadow-2xl hover:shadow-emerald-500/40 hover:scale-110 transition-all duration-300"

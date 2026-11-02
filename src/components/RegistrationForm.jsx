@@ -10,7 +10,7 @@ export default function RegistrationForm({ selectedProgram }) {
     program: 'Kelas Pra Usia Dini - Anak-Anak',
     venue: 'GOR Sariwates (Kamis, Sabtu, Minggu | 16.00 - 19.00 WIB)',
     jerseySize: 'Size Anak M (Usia 8-10 tahun)',
-    targetAdmin: 'hervan', // 'hervan' | 'seva'
+    targetAdmin: 'admin1', // 'admin1' | 'admin2'
     notes: '',
   });
 
@@ -31,7 +31,7 @@ export default function RegistrationForm({ selectedProgram }) {
   };
 
   const getActiveAdmin = () => {
-    return formData.targetAdmin === 'seva' 
+    return formData.targetAdmin === 'admin2' 
       ? siteConfig.contact.secondaryAdmin 
       : siteConfig.contact.primaryAdmin;
   };
@@ -161,7 +161,7 @@ _Halo ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmteam Ba
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <label
                     className={`flex items-center gap-3 p-3.5 rounded-xl border cursor-pointer transition-all ${
-                      formData.targetAdmin === 'hervan'
+                      formData.targetAdmin === 'admin1'
                         ? 'bg-brand-royal/40 border-brand-gold text-white shadow-md'
                         : 'bg-brand-dark/70 border-slate-700/80 text-slate-300 hover:bg-brand-dark'
                     }`}
@@ -169,8 +169,8 @@ _Halo ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmteam Ba
                     <input
                       type="radio"
                       name="targetAdmin"
-                      value="hervan"
-                      checked={formData.targetAdmin === 'hervan'}
+                      value="admin1"
+                      checked={formData.targetAdmin === 'admin1'}
                       onChange={handleChange}
                       className="text-brand-gold focus:ring-brand-gold"
                     />
@@ -182,7 +182,7 @@ _Halo ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmteam Ba
 
                   <label
                     className={`flex items-center gap-3 p-3.5 rounded-xl border cursor-pointer transition-all ${
-                      formData.targetAdmin === 'seva'
+                      formData.targetAdmin === 'admin2'
                         ? 'bg-brand-royal/40 border-brand-gold text-white shadow-md'
                         : 'bg-brand-dark/70 border-slate-700/80 text-slate-300 hover:bg-brand-dark'
                     }`}
@@ -190,8 +190,8 @@ _Halo ${admin.name}, saya mengisi form pendaftaran di website resmi Daimmteam Ba
                     <input
                       type="radio"
                       name="targetAdmin"
-                      value="seva"
-                      checked={formData.targetAdmin === 'seva'}
+                      value="admin2"
+                      checked={formData.targetAdmin === 'admin2'}
                       onChange={handleChange}
                       className="text-brand-gold focus:ring-brand-gold"
                     />
