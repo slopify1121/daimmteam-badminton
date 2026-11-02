@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Trophy, Phone, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronRight } from 'lucide-react';
 import { siteConfig } from '../data/siteData';
 
 export default function Navbar() {
@@ -38,10 +38,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Logo & Brand Name */}
+          {/* Logo PNG & Brand Name */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-brand-royal to-blue-600 flex items-center justify-center border border-brand-gold/40 shadow-md group-hover:scale-105 transition-transform">
-              <Trophy className="w-6 h-6 text-brand-gold animate-pulse" />
+            <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+              <img
+                src="/logo.png"
+                alt="Logo Daimmteam Badminton Club"
+                className="w-full h-full object-contain filter drop-shadow-md"
+              />
             </div>
             <div>
               <span className="block text-lg sm:text-xl font-extrabold tracking-tight text-white group-hover:text-brand-gold transition-colors">
@@ -66,22 +70,11 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Desktop Call to Action & Hotline */}
-          <div className="hidden lg:flex items-center gap-3">
-            <a
-              href={`https://wa.me/${siteConfig.contact.primaryAdmin.whatsapp}?text=${encodeURIComponent('Halo Kak Hervan, saya ingin bertanya info pendaftaran Daimmteam Badminton Club.')}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-xs font-semibold text-slate-300 hover:text-white bg-brand-surface/80 border border-slate-700/60 px-3.5 py-2 rounded-lg transition-all"
-              title="Hubungi Admin Hervan"
-            >
-              <Phone className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Hervan: {siteConfig.contact.primaryAdmin.whatsappFormatted}</span>
-            </a>
-
+          {/* Desktop Call to Action (Nomor WA dihapus, tombol lebih bersih) */}
+          <div className="hidden lg:flex items-center">
             <a
               href="#daftar"
-              className="px-5 py-2.5 rounded-lg font-bold text-xs sm:text-sm bg-gradient-to-r from-brand-gold to-amber-500 text-brand-dark hover:from-amber-400 hover:to-brand-gold transition-all duration-300 shadow-md hover:shadow-brand-gold/20 hover:scale-105 flex items-center gap-1.5"
+              className="px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-brand-gold to-amber-500 text-brand-dark hover:from-amber-400 hover:to-brand-gold transition-all duration-300 shadow-md hover:shadow-brand-gold/20 hover:scale-105 flex items-center gap-1.5 cursor-pointer"
             >
               <span>Daftar Sekarang</span>
               <ChevronRight className="w-4 h-4" />
@@ -116,7 +109,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="pt-3 border-t border-slate-800 space-y-2.5">
+          <div className="pt-3 border-t border-slate-800">
             <a
               href="#daftar"
               onClick={() => setIsOpen(false)}
@@ -125,28 +118,6 @@ export default function Navbar() {
               <span>Daftar Sekarang (Online)</span>
               <ChevronRight className="w-4 h-4" />
             </a>
-
-            <div className="grid grid-cols-2 gap-2 text-xs">
-              <a
-                href={`https://wa.me/${siteConfig.contact.primaryAdmin.whatsapp}?text=${encodeURIComponent('Halo Kak Hervan, saya ingin bertanya info pendaftaran Daimmteam Badminton Club.')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 py-2 px-2 text-slate-300 bg-brand-surface border border-slate-700 rounded-lg"
-              >
-                <Phone className="w-3.5 h-3.5 text-emerald-400" />
-                <span>WA Hervan</span>
-              </a>
-
-              <a
-                href={`https://wa.me/${siteConfig.contact.secondaryAdmin.whatsapp}?text=${encodeURIComponent('Halo Kak Seva, saya ingin bertanya info pendaftaran Daimmteam Badminton Club.')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 py-2 px-2 text-slate-300 bg-brand-surface border border-slate-700 rounded-lg"
-              >
-                <Phone className="w-3.5 h-3.5 text-emerald-400" />
-                <span>WA Seva</span>
-              </a>
-            </div>
           </div>
         </div>
       )}

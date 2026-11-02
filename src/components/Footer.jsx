@@ -12,8 +12,12 @@ export default function Footer() {
           {/* Brand Col (2 cols) */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-royal to-blue-600 flex items-center justify-center border border-brand-gold/40 shadow-md">
-                <Trophy className="w-5 h-5 text-brand-gold" />
+              <div className="w-11 h-11 flex items-center justify-center shrink-0">
+                <img
+                  src="/logo.png"
+                  alt="Logo Daimmteam Badminton Club"
+                  className="w-full h-full object-contain filter drop-shadow-md"
+                />
               </div>
               <div>
                 <span className="block text-xl font-black text-white">
