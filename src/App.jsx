@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Programs from './components/Programs';
 import Facilities from './components/Facilities';
-import Coaches from './components/Coaches';
 import Gallery from './components/Gallery';
 import RegistrationForm from './components/RegistrationForm';
 import LocationMap from './components/LocationMap';
@@ -30,7 +29,6 @@ export default function App() {
         <Hero />
         <Programs onSelectProgram={handleSelectProgram} />
         <Facilities />
-        <Coaches />
         <Gallery />
         <RegistrationForm selectedProgram={selectedProgram} />
         <LocationMap />

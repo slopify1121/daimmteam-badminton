@@ -23,7 +23,6 @@ export default function Navbar() {
     { name: 'Program Kelas', href: '#program' },
     { name: 'Jadwal & Lokasi', href: '#lokasi' },
     { name: 'Fasilitas', href: '#fasilitas' },
-    { name: 'Tim Pelatih', href: '#pelatih' },
     { name: 'Galeri', href: '#galeri' },
     { name: 'FAQ', href: '#faq' },
   ];

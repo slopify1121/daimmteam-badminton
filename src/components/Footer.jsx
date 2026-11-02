@@ -63,7 +63,6 @@ export default function Footer() {
               <li><a href="#program" className="hover:text-brand-gold transition-colors">Program & Silabus</a></li>
               <li><a href="#lokasi" className="hover:text-brand-gold transition-colors">Jadwal & Lokasi GOR</a></li>
               <li><a href="#fasilitas" className="hover:text-brand-gold transition-colors">Fasilitas Latihan</a></li>
-              <li><a href="#pelatih" className="hover:text-brand-gold transition-colors">Tim Kepelatihan</a></li>
               <li><a href="#galeri" className="hover:text-brand-gold transition-colors">Galeri Latihan</a></li>
               <li><a href="#daftar" className="hover:text-brand-gold transition-colors">Pendaftaran 150rb + Jersey</a></li>
             </ul>
